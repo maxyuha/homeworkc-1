@@ -6,7 +6,7 @@ namespace ConsoleApp
      {
         static void Main(string[] args)
         {
-             //1.Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+             //1.Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
             
             Console.WriteLine("введите первое число");
 
@@ -15,16 +15,13 @@ namespace ConsoleApp
             Console.WriteLine("введите второе число");
             int number2= Convert.ToInt32(Console.ReadLine());
 
-             if (number1 > number2)
+            Console.WriteLine("введите третье число");
+            int number3= Convert.ToInt32(Console.ReadLine());
+
+             int max = Math.Max(number1, Math.Max(number2, number3));
              {
 
-                Console.WriteLine("меньшее число: "+number2);
-                Console.WriteLine("большее число: "+number1);
-             }
-             else
-             {
-                Console.WriteLine("меньшее число: "+number1);
-                Console.WriteLine("большее число: "+number2);
+                Console.WriteLine("большее число: "+max);
              }
 
         }
