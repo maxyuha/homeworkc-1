@@ -6,22 +6,20 @@ namespace ConsoleApp
      {
         static void Main(string[] args)
         {
-             //1.Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+             //1.Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
             
-            Console.WriteLine("введите первое число");
+            Console.WriteLine("введите  число");
 
             int number1= Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("введите второе число");
-            int number2= Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("введите третье число");
-            int number3= Convert.ToInt32(Console.ReadLine());
-
-             int max = Math.Max(number1, Math.Max(number2, number3));
+            if (number1%2 ==0)
              {
 
-                Console.WriteLine("большее число: "+max);
+                Console.WriteLine("Число четное");
+             }
+             else
+             {
+                Console.WriteLine("Число нечетное");
              }
 
         }
